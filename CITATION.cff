@@ -9,7 +9,7 @@ abstract: >-
   are missing and the observed entries are also corrupted by outliers.
 authors:
   - family-names: Gao
-    given-names: Hankuan
+    given-names: Han Kuan
     affiliation: "Department of Electrical Engineering, City University of Hong Kong"
   - family-names: Sheng
     given-names: Hao Nan
@@ -18,7 +18,7 @@ authors:
     given-names: Hing Cheung
     affiliation: "Department of Electrical Engineering, City University of Hong Kong"
   - family-names: Wang
-    given-names: Zhiyong
+    given-names: Zhi-Yong
     affiliation: "Ocean College, Zhejiang University"
 type: software
 license: MIT
@@ -34,12 +34,12 @@ preferred-citation:
   title: "Robust Multi-Matrix Completion via Hybrid Ordinary-Welsch Loss"
   authors:
     - family-names: Gao
-      given-names: Hankuan
+      given-names: Han Kuan
     - family-names: Sheng
       given-names: Hao Nan
     - family-names: So
       given-names: Hing Cheung
     - family-names: Wang
-      given-names: Zhiyong
+      given-names: Zhi-Yong
   collection-title: "IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)"
   year: 2027

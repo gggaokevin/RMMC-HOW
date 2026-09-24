@@ -4,7 +4,7 @@ MATLAB implementation, the six baselines, the S1–S4 experiment programs and th
 ORL dataset, for
 
 > **Robust Multi-Matrix Completion via Hybrid Ordinary–Welsch Loss**
-> Hankuan Gao, Hao Nan Sheng, Hing Cheung So, Zhiyong Wang
+> Han Kuan Gao, Hao Nan Sheng, Hing Cheung So, Zhi-Yong Wang
 > submitted to ICASSP 2027
 
 *Multi-matrix completion* (MMC) restores a collection of matrices that share a row and a
@@ -169,7 +169,7 @@ Cambridge.
 ```bibtex
 @inproceedings{Gao2027RMMC,
   title     = {Robust Multi-Matrix Completion via Hybrid Ordinary--Welsch Loss},
-  author    = {Gao, Hankuan and Sheng, Hao Nan and So, Hing Cheung and Wang, Zhiyong},
+  author    = {Gao, Han Kuan and Sheng, Hao Nan and So, Hing Cheung and Wang, Zhi-Yong},
   booktitle = {IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
   year      = {2027}
 }
