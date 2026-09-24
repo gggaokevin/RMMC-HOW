@@ -11,11 +11,11 @@ authors:
   - family-names: Gao
     given-names: Hankuan
     affiliation: "Department of Electrical Engineering, City University of Hong Kong"
-  - family-names: So
-    given-names: Hing Cheung
-    affiliation: "Department of Electrical Engineering, City University of Hong Kong"
   - family-names: Sheng
     given-names: Hao Nan
+    affiliation: "Department of Electrical Engineering, City University of Hong Kong"
+  - family-names: So
+    given-names: Hing Cheung
     affiliation: "Department of Electrical Engineering, City University of Hong Kong"
   - family-names: Wang
     given-names: Zhiyong
@@ -35,10 +35,10 @@ preferred-citation:
   authors:
     - family-names: Gao
       given-names: Hankuan
-    - family-names: So
-      given-names: Hing Cheung
     - family-names: Sheng
       given-names: Hao Nan
+    - family-names: So
+      given-names: Hing Cheung
     - family-names: Wang
       given-names: Zhiyong
   collection-title: "IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)"
