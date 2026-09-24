@@ -1,0 +1,20 @@
+# ---------------------------------------------------------------------------
+#  Never translate line endings.
+#
+#  This archive mixes source code with data files whose bytes must survive a
+#  clone unchanged: *.pgm face images (network samples are huge), *.pdf/*.png
+#  figures, *.mexw64 binaries, *.tns test data.  Git's system config on the
+#  author's machine is core.autocrlf=true, which would rewrite CRLF on
+#  checkout and silently corrupt them.  `* -text` stores and restores the
+#  working bytes verbatim.
+# ---------------------------------------------------------------------------
+* -text
+
+# explicit, so diff/merge never tries to treat these as text
+*.pgm     binary
+*.mat     binary
+*.pdf     binary
+*.png     binary
+*.jpg     binary
+*.mexw64  binary
+*.tns     binary

@@ -1,0 +1,31 @@
+RMMC_V5 provenance (V5-T17): downloaded 2026 from
+https://github.com/thanhle88/Triple-Tensor-Decomposition-with-ADMM (main branch;
+codeload zip truncated by sandbox network at ~4.7MB, tree+key files fetched via
+jsDelivr CDN). Code of:
+
+  Robust Triple Tensor Decomposition for Corrupted and Incomplete Multiway Data
+  (ICASSP 2026, Dang-Nhat Le et al.; repo README also cites the related "Fast
+  and Robust Triple Tensor Decomposition with Data Corruption").
+
+Read-only reference area.
+
+V5 audit notes (V5-T17, for comparison-set decision):
+- Setting: FULL-TENSOR robust triple decomposition -- signature
+    [A,B,C,O,errHist] = triple_decomp_ADMM(D, r, opts)
+  model min lambda||E||_1 + ridge(A,B,C)  s.t.  D = L + O, E = O,
+  L = TriTD(A,B,C) (A n1xrxr, B rxn2xr, C rxrxn3; "triple rank" r).
+  NO Omega/missing mask anywhere in the core solver -> NOT native masked
+  completion (user's suspicion V5-T17 confirmed).
+- Their completion experiments (sensor/taxi/network/chicago, 10% missing,
+  triple rank r=5) treat missing AS corrupted ("missing treated as corrupted",
+  README) -- same family as our RTCUR-FF-TC adaptation (fill + robust O absorbs
+  the fill), NOT a native completion interface.
+- Language: MATLAB (fast_robust_triple_tensor/). opts: mu/rho/lambda/lambda2/
+  maxIter/tol/disp.
+- Adaptation for V5 synthetic (100x200x20, Op=0.8, GMM): needs (a) external
+  missing handling (0-fill vs fill-F like RTCUR-FF-TC), (b) triple-rank r choice
+  (our data is NOT TriTD-low-rank; r probes needed), (c) lambda/mu scaling.
+  Complexity O(3 n^3 r^2 + 3 n^2 r^4 + 3 r^6)/iter -> probe runtime at
+  100x200x20.
+- Status: CONDITIONAL (user V5-T17): only if masked-completion usability is
+  acceptable; otherwise full-observation (Op=1) row only or drop.

@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+title: "RMMC: Robust Multi-Matrix Completion via Hybrid Ordinary-Welsch Loss"
+abstract: >-
+  Reference implementation, baselines (MMC, RMC-HOW, RMC-l0, RTCUR, TriTD,
+  RGNMR), experiment programs and the ORL dataset for robust multi-matrix
+  completion with the hybrid ordinary-Welsch loss: a collection of matrices
+  sharing a row and a column subspace is restored when whole rows or columns
+  are missing and the observed entries are also corrupted by outliers.
+authors:
+  - family-names: Gao
+    given-names: Hankuan
+    affiliation: "Department of Electrical Engineering, City University of Hong Kong"
+  - family-names: So
+    given-names: Hing Cheung
+    affiliation: "Department of Electrical Engineering, City University of Hong Kong"
+  - family-names: Sheng
+    given-names: Hao Nan
+    affiliation: "Department of Electrical Engineering, City University of Hong Kong"
+  - family-names: Wang
+    given-names: Zhiyong
+    affiliation: "Ocean College, Zhejiang University"
+type: software
+license: MIT
+repository-code: "https://github.com/gggaokevin/RMMC-HOW"
+keywords:
+  - low-rank matrix recovery
+  - multi-matrix completion
+  - robust matrix completion
+  - hybrid ordinary-Welsch loss
+  - structural missingness
+preferred-citation:
+  type: conference-paper
+  title: "Robust Multi-Matrix Completion via Hybrid Ordinary-Welsch Loss"
+  authors:
+    - family-names: Gao
+      given-names: Hankuan
+    - family-names: So
+      given-names: Hing Cheung
+    - family-names: Sheng
+      given-names: Hao Nan
+    - family-names: Wang
+      given-names: Zhiyong
+  collection-title: "IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)"
+  year: 2027

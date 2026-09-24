@@ -1,0 +1,72 @@
+MIT License
+
+Copyright (c) 2026 Hankuan Gao, Hing Cheung So, Hao Nan Sheng, Zhiyong Wang
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+THIRD-PARTY NOTICES
+================================================================================
+
+The MIT licence above covers the code written by this paper's authors:
+RMMC.m, rmmc_defaults.m, MMC_half.m, utils/, baselines/RMC_HOW/ and
+experiments/.
+
+The package also redistributes the following components.  Each keeps its own
+licence, reproduced or referenced next to the component.
+
+1. RTCUR -- Robust Tensor CUR Decompositions
+   baselines/RTCUR/  (LICENSE included)
+   MIT License, Copyright (c) 2022 Longxiu Huang.
+   Source: https://github.com/huangl3/RTCUR
+   Reference: H. Cai, Z. Chao, L. Huang, D. Needell, "Robust Tensor CUR
+   Decompositions: Rapid Low-Tucker-Rank Tensor Recovery with Sparse
+   Corruptions", SIAM J. Imaging Sci., 17(1):225-247, 2024.
+
+2. RGNMR -- Gauss-Newton method for robust matrix completion
+   baselines/RGNMR/  (LICENSE included)
+   MIT License, Copyright (c) 2025 Eilon Vaknin Laufer.
+   Source: https://github.com/eilon96/RGNMR
+   Reference: E. Vaknin Laufer, B. Nadler, "RGNMR: A Gauss-Newton method for
+   robust matrix completion with theoretical guarantees", NeurIPS 2025.
+
+3. Tensor Toolbox for MATLAB v3.1
+   third_party/tensor_toolbox/  (LICENSE.txt included)
+   Copyright (2018) Sandia Corporation; BSD-style licence permitting
+   redistribution with the notice.  Required by the RTCUR and TriTD baselines.
+
+4. TriTD -- Fast and Robust Triple Tensor Decomposition
+   baselines/TriTD/  (see PROVENANCE.txt)
+   Source: https://github.com/thanhle88/Triple-Tensor-Decomposition-with-ADMM
+   Reference: N. Q. Dang, D. M. Nhat, T. T. Le, N. L. Trung, K. Abed-Meraim,
+   "Fast and Robust Triple Tensor Decomposition with Data Corruption",
+   ICASSP 2026, pp. 301-305.
+   Redistributed verbatim for reproducibility of the comparison in the paper;
+   no separate licence file was shipped with the release.
+
+5. MMC -- Multi-Matrix Completion
+   MMC.m is the authors' copy of the reference implementation released with
+   H. N. Sheng, Z.-Y. Wang, H. C. So, A. M. Zoubir, "Multi-Matrix Completion:
+   A Novel Framework for Structurally Missing Elements", IEEE TPAMI,
+   48(2):1626-1640, 2026.
+
+6. ORL face database
+   data/orl/  -- The ORL Database of Faces, AT&T Laboratories Cambridge.
+   https://cam-orl.co.uk/facedatabase.html
+   Redistributed for research use with attribution.
